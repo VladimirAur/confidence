@@ -1,0 +1,379 @@
+
+
+html{
+	font-size: 10px;
+}
+
+body{
+	font-family: 'Marck Script', cursive;
+	text-align: center;
+	}
+button:focus{
+	outline: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+/*Стили для шапки сайта*/
+.head{
+	background: url(../img/bg-top.jpg) center top 25% no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;	
+}
+/*.head-wrap{
+	background-color: rgba(225, 95, 117, 0.1);
+
+}*/
+.head-subtitle{
+	text-align: left;
+	font-size: 2rem;
+}
+.head-title{
+	padding: 15rem 0;
+	font-size: 3.6rem;
+	margin: 0;
+}
+/*Анимация заголовка*/
+#blink1 { 
+	-webkit-animation: blink1 3s linear infinite; 
+	animation: blink1 3s linear infinite; 
+	} 
+@-webkit-keyframes blink1 { 
+	0% { color: rgba(34, 34, 34, 1); }
+	50% { color: rgba(34, 34, 34, 0); } 
+	100% { color: rgba(34, 34, 34, 1); } }
+	@keyframes blink1 {
+	0% { color: rgba(34, 34, 34, 1); }
+	50% { color: rgba(34, 34, 34, 0); }
+	100% { color: rgba(34, 34, 34, 1); } }
+
+/*Стили информационного блока сайта*/
+.info{
+	background-color: #000000;
+}
+.btn-outline-light{
+	border: none;
+	margin-top: 1rem;
+
+}
+.btn-outline-light:hover{
+	background: none;
+}
+.btn-outline-light:focus{
+	box-shadow: none;	
+}
+.info-img{
+	width: 100%;	
+	border: 2px solid #a9a2a2;
+	border-radius: 50%;
+	margin-bottom: 2rem;      	
+}
+.info-title{
+	font-size: 2.5rem;
+	color: #fff;
+	margin-bottom: 2rem;
+}
+.card-body{
+	margin-top: 1rem;
+	font-size: 2rem;
+	text-align: left;	
+	font-style: italic;
+	background: url(../img/bg-light2.png) repeat;	
+}
+.info-about-foto{
+	max-width: 70px;	
+	float: left;
+	margin-right: 1rem;
+	margin-bottom: 1rem;
+}
+.info-about-title{
+	font-weight: 700;
+}
+.info-help-title{
+	text-align: center;
+	font-size: 2rem;
+	margin-bottom: 2rem;
+}
+.info-help-subtitle{
+	text-align: center;
+	font-size: 1.5rem;
+}
+.info-help-text{
+	margin-bottom: 0.5rem;
+	list-style-type: none;
+}
+.fa-check{
+	color: #ccbd00;
+}
+.fa-times{
+	color: #000;
+}
+.apostof{
+	font-size: 1.4rem;
+	color: #000;	
+}
+
+/*Стили для слайдера*/
+.slider{
+	background-color: #000000;
+}
+.section-title{
+	font-size: 2.5rem;
+	color: #f6f6f6;
+	text-transform: uppercase;
+	padding-top: 4rem;	
+	margin-bottom: 1rem;
+}
+.mar-b{
+	margin-bottom: 3rem;
+}
+
+.carousel-item{
+	position: relative;	
+	margin-bottom: 1rem;
+}
+.carousel-caption{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);	
+}
+.slider-label{
+	font-size: 2rem;
+	font-style: italic;
+}
+
+/*Стили для блока помощь*/
+.help{
+	background-color: #000000;
+}
+.help-item{
+	display: block;
+	border: 1px solid #ffffff;
+	margin-bottom: 1rem;		
+}
+.help-img{
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+.help-title{
+	display: block;
+	width: 100%;
+	font-size: 2rem;
+	font-weight: bold;
+	color: #534e3e;
+	background-color: #f6f6f6;
+	padding: 1rem;
+}
+.help-title:hover{
+	cursor: pointer;	
+}
+
+
+/*Стили для контактов*/
+.contact{
+	background-color: #000000;
+}
+.section-subtitle{
+	font-size: 1.5rem;
+	margin-bottom: 4rem;
+	color: #ffffff;
+	font-style: italic;
+}
+.form{
+	width: 90%;
+	margin: 0 auto;
+	background-color: #080808;
+	padding: 3rem 5rem 2rem 5rem;
+	margin-bottom: 2rem;
+}
+
+.form-group{
+	margin-bottom: 2rem;
+}
+.form-subtitle{
+	font-size: 1.1rem;
+	color: #fef69a;
+}
+.form-button{
+	border: 1px solid #fff;
+	color: #fff;
+}
+.form-button:hover{
+	color: #fff;
+}
+
+.fa-lock, .fa-phone, .fa-envelope, .fa-check, .fa-times{
+	margin-right: 0.5rem;
+}
+.contact-item{
+	text-align: left;
+	font-family: sans-serif;
+}
+.contact-info{	
+	text-transform: uppercase;
+	color: #ffffff;
+	margin-top: 4rem;
+
+}
+.contact-h{
+	display: inline-block;
+	font-size: 1.5rem;
+	color: #fef69a;
+	margin-top: 1rem;		
+}
+.contact-h_info{
+	display: inline-block;
+	font-size: 1.5rem;
+	color: #fff;
+	margin-left: 1rem;
+}
+.social-icon{
+	font-size: 3rem;
+	margin-top: 2rem; 		
+}
+.social-link{
+	color: #fef69a;
+	margin-right: 1rem;
+}
+
+/*Модальные окна*/
+.modal-header{
+	border: none;
+}
+.modal-content{
+	background: url(../img/bg-light2.png) repeat;	
+}
+.cross{
+	font-size: 2.5rem;
+}
+.modal-help-title{
+	font-size: 2.4rem;
+	font-weight: 700;
+	margin-bottom: 2rem;
+}
+.modal-input{
+	font-size: 2rem;
+	border-radius: 20px;
+	margin-bottom: 2rem;	
+}
+
+.modal-button{
+	font-size: 2rem;	
+	border-radius: 20px;
+	margin-bottom: 1.5rem;
+	margin-top: 2rem;
+}
+.modal-label{
+	font-size: 1.5rem;
+	font-weight: 700;
+	margin-left: 2rem;	
+}
+.form-group{
+	text-align: left;
+}
+.wrapper{
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+/*Стили телефонной трубки*/
+.phone-call{
+	animation: rotating 1s linear 0s infinite;
+	position: fixed;
+	right: 0.5rem;
+	top: 0.5rem;
+	color: #fef69a;
+	font-size: 3rem;
+	z-index: 99;
+	width: 45px;
+	height: 45px;
+	border: 1px solid #fef69a;
+	border-radius: 50%;
+	display: inline-block;
+	text-align: center;
+	visibility: hidden;
+}
+
+
+@keyframes rotating {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(40deg);
+  }
+}
+
+/*Медиа запросы для адаптивности*/
+@media screen and (max-width: 992px) {
+	.head-title{
+		padding: 10rem 0;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.head-title{
+	text-align: center;
+	padding: 1rem;
+	font-size: 3rem;
+	}
+	.info-title{
+		font-size: 1.5rem;
+	}
+	.card-body{
+		font-size: 1.5rem;
+	}
+	.section-subtitle{
+		margin-bottom: 1rem;
+	}
+	.contact-item{
+		text-align: center;
+	}
+	.contact-info_mail{
+		margin-top: 1rem;
+	}	
+	.contact-h{
+		font-size: 1.8rem;
+		margin-top: 0.5rem;
+	}
+}
+
+@media screen and (max-width: 576px){
+	.no-margin{
+		margin: 0;
+		padding: 0;	
+	}
+	.head-title{
+		font-size: 2.5rem;
+	}
+	.form{
+		padding: 1rem;
+	}
+	.contact-info{
+		display: none;
+	}
+	.contact-h_info{
+		display: block;
+	}
+	.phone-call{
+		visibility: visible;
+	}
+}
+
+@media screen and (max-width: 400px){
+	.info-title{
+		font-size: 1.2rem;
+	}
+	.help-title{
+		font-size: 1.2rem;		
+	}
+
+
+
+}
+
+	
