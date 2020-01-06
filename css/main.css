@@ -83,12 +83,13 @@ a{
 	background: url(../img/bg-light2.png) repeat;	
 }
 .info-about-foto{
-	max-width: 70px;	
+	max-width: 90px;	
 	float: left;
 	margin-right: 1rem;
-	margin-bottom: 1rem;
+	margin-bottom: 0;
 }
 .info-about-title{
+	font-size: 2rem;
 	font-weight: 700;
 }
 .info-help-title{
@@ -132,7 +133,7 @@ a{
 
 .carousel-item{
 	position: relative;	
-	margin-bottom: 1rem;
+	margin-bottom: 1rem;	
 }
 .carousel-caption{
 	position: absolute;
@@ -143,6 +144,10 @@ a{
 .slider-label{
 	font-size: 2rem;
 	font-style: italic;
+}
+
+.label-black{
+	color: #000;
 }
 
 /*Стили для блока помощь*/
