@@ -137,12 +137,12 @@ a{
 }
 .carousel-caption{
 	position: absolute;
-	top: 0;
+	bottom: 0;
 	left: 50%;
 	transform: translateX(-50%);	
 }
 .slider-label{
-	font-size: 2rem;
+	font-size: 3rem;
 	font-style: italic;
 }
 
@@ -217,6 +217,7 @@ a{
 .contact-item{
 	text-align: left;
 	font-family: sans-serif;
+	font-style: italic;
 }
 .contact-info{	
 	text-transform: uppercase;
@@ -335,6 +336,11 @@ a{
 	.section-subtitle{
 		margin-bottom: 1rem;
 	}
+	.slider-label{
+	font-size: 2rem;
+	font-style: italic;
+	text-shadow: 1px 1px 2px gray;
+}
 	.contact-item{
 		text-align: center;
 	}
