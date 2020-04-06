@@ -203,63 +203,63 @@
 						<div class="col-md-4 col-6 ">
 							<div class="help-item">
 								<img src="img/help/love.jpg" alt="" class="help-img">
-								<button class="help-title" type="button" data-toggle="modal" data-target="#love">Любовь</button>
+								<button class="help-title" data-toggle="modal" data-target="#modal" id="love">Любовь</button>
 							</div>
 						</div>						
 
 						<div class="col-md-4 col-6 ">
 							<div class="help-item">
 								<img src="img/help/career.jpg" alt="" class="help-img">
-								<button class="help-title" data-toggle="modal" data-target="#career">Карьера</button>
+								<button class="help-title" data-toggle="modal" data-target="#modal" id="career">Карьера</button>
 							</div>
 						</div>
 
 						<div class="col-md-4 col-6 ">
 							<div class="help-item">
 								<img src="img/help/relations.jpg" alt="" class="help-img">
-								<button class="help-title" data-toggle="modal" data-target="#relations">Отношения</button>
+								<button class="help-title" data-toggle="modal" data-target="#modal" id="relations">Отношения</button>
 							</div>
 						</div>
 
 						<div class="col-md-4 col-6 ">
 							<div class="help-item">
 								<img src="img/help/meaning.jpg" alt="" class="help-img">
-								<button class="help-title" data-toggle="modal" data-target="#meaning">Смысл жизни</button>
+								<button class="help-title" data-toggle="modal" data-target="#modal" id="meaning">Смысл жизни</button>
 							</div>
 						</div>
 
 						<div class="col-md-4 col-6 ">
 							<div class="help-item">
 								<img src="img/help/family.jpg" alt="" class="help-img">
-								<button class="help-title" data-toggle="modal" data-target="#family">Семья</button>
+								<button class="help-title" data-toggle="modal" data-target="#modal" id="family">Семья</button>
 							</div>
 						</div>
 
 						<div class="col-md-4 col-6 ">
 							<div class="help-item">
 								<img src="img/help/business.jpg" alt="" class="help-img">
-								<button class="help-title" data-toggle="modal" data-target="#business">Бизнес</button>
+								<button class="help-title" data-toggle="modal" data-target="#modal" id="business">Бизнес</button>
 							</div>
 						</div>
 					</div>
 
 					<div class="row">
 						<div class="col-12">
-							<div class="help-item">
+							<div class="help-item" data-interval="1500">
 								<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 								  <div class="carousel-inner">
 								    <div class="carousel-item active">
-								      <img src="img/loyar/photo1.jpg" class="d-block w-100" alt="...">
+								      <img src="img/loyar/photo1.jpg" class="d-block w-100" alt="foto1">
 								    </div>
-								    <div class="carousel-item">
-								      <img src="img/loyar/photo2.jpg" class="d-block w-100" alt="...">
+								    <div class="carousel-item" data-interval="1500">
+								      <img src="img/loyar/photo2.jpg" class="d-block w-100" alt="foto2">
 								    </div>
-								    <div class="carousel-item">
-								      <img src="img/loyar/photo3.jpg" class="d-block w-100" alt="...">
+								    <div class="carousel-item" data-interval="1500">
+								      <img src="img/loyar/photo3.jpg" class="d-block w-100" alt="foto3">
 								    </div>
 								  </div>								  
 								</div>
-								<button class="help-title" data-toggle="modal" data-target="#loyar">
+								<button class="help-title" data-toggle="modal" data-target="#modal" id="loyar">
 									Семейный адвокат(Фемида)
 								</button>
 							</div>
@@ -277,18 +277,18 @@
 				<div class="row">				
 
 					<div class="col-md-8">
-						<form class="form">							
+						<form class="form" action="send.php" method="post">							
 							<div class="form-group">
-								<input type="email" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="Ваше имя">								
+								<input type="text" name="name" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="Ваше имя">								
 							</div>
 							<div class="form-group">
-								<input type="phone" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="Ваш телефон">
+								<input type="tel" name="phone" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="Ваш телефон">
 							</div>
 							<div class="form-group">
-								<textarea class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="3"placeholder="Опишите проблему"></textarea>							
+								<textarea name="area" class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="3"placeholder="Опишите проблему"></textarea>							
 							</div>
 							<div class="form-group">								  
-								<button type="submit" class="btn btn-lg btn-block form-button">Отправить</button>		  
+								<button type="submit" name="add" class="btn btn-lg btn-block form-button">Отправить</button>		  
 							</div>							
 							<span class="form-subtitle"><i class="fas fa-lock"></i>Все данные полностью конфеденциальны</span>		
 						</form>								
@@ -305,6 +305,7 @@
 								<a class="social-link" href=""><i class="fab fa-viber"></i></a>
 								<a class="social-link" href=""><i class="fab fa-google-plus"></i></a>
 								<a class="social-link" href=""><i class="fab fa-whatsapp"></i></a>
+								<a class="social-link" href=""><i class="fab fa-instagram"></i></a>
 							</p>
 						</div>						
 					</div>					
@@ -313,9 +314,8 @@
 			<!-- Контейнер -->			
 		</section>
 		
-<!-- Модальные окна		 -->
-<!-- Модальное окно Love -->
-<div class="modal fade" id="love" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<!-- Модальное окно  -->
+<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
     <div class="modal-content">
       <div class="modal-header">						        
@@ -324,222 +324,36 @@
         </button>
       </div>
       <div class="modal-body">
-      	<form class="help-form">
-      		<h5 class="modal-help-title">Мне нужна помощь в любви</h5>				
+      	<form class="help-form" action="send.php" method="post">
+      		<h5 class="modal-help-title"></h5>				
       		<div class="form-group">
       			<div class="wrapper">
       				<label class="modal-label" for="#">Имя</label>					      			
-      				<input type="email" class="form-control form-control-lg modal-input" id="exampleFormControlInput1" placeholder="">
+      				<input type="text" name="name" class="form-control form-control-lg modal-input" id="exampleFormControlInput1" placeholder="">
       			</div>
       		</div>
       		<div class="form-group">
       			<div class="wrapper">
       				<label class="modal-label" for="#">Телефон*</label>					      			
-      				<input type="phone" class="form-control form-control-lg modal-input" id="exampleFormControlInput1" placeholder="">
+      				<input type="tel" name="phone" class="form-control form-control-lg modal-input" id="exampleFormControlInput1" placeholder="">
       			</div>
       		</div>
-      		<button type="button" class="btn btn-outline-dark btn-lg modal-button">Обратиться</button>		
+      		<div class="form-group none">
+      			<textarea name="area" class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="3"placeholder="Опишите проблему">Сообщение</textarea>							
+      		</div>
+      		<button type="submit" name="add" class="btn btn-outline-dark btn-lg modal-button">Обратиться</button>		
       	</form>											        
       </div>						      
     </div>
   </div>
 </div>
-<!-- Модальное окно Love -->
-<!-- Модальное окно Карера -->
-<div class="modal fade" id="career" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
-    <div class="modal-content">
-      <div class="modal-header">						        
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span class="cross" aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      	<form class="help-form">
-      		<h5 class="modal-help-title">Мне нужна помощь в карьере</h5>				
-      		<div class="form-group">
-      			<div class="wrapper">
-      				<label class="modal-label" for="#">Имя</label>					      			
-      				<input type="email" class="form-control form-control-lg modal-input" id="exampleFormControlInput1" placeholder="">
-      			</div>
-      		</div>
-      		<div class="form-group">
-      			<div class="wrapper">
-      				<label class="modal-label" for="#">Телефон*</label>					      			
-      				<input type="phone" class="form-control form-control-lg modal-input" id="exampleFormControlInput1" placeholder="">
-      			</div>
-      		</div>
-      		<button type="button" class="btn btn-outline-dark btn-lg modal-button">Обратиться</button>		
-      	</form>											        
-      </div>						      
-    </div>
-  </div>
-</div>
-<!-- Модальное окно Карера -->
-<!-- Модальное окно Отношения -->
-<div class="modal fade" id="relations" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
-    <div class="modal-content">
-      <div class="modal-header">						        
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span class="cross" aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      	<form class="help-form">
-      		<h5 class="modal-help-title">Мне нужна помощь в отношениях</h5>				
-      		<div class="form-group">
-      			<div class="wrapper">
-      				<label class="modal-label" for="#">Имя</label>					      			
-      				<input type="email" class="form-control form-control-lg modal-input" id="exampleFormControlInput1" placeholder="">
-      			</div>
-      		</div>
-      		<div class="form-group">
-      			<div class="wrapper">
-      				<label class="modal-label" for="#">Телефон*</label>					      			
-      				<input type="phone" class="form-control form-control-lg modal-input" id="exampleFormControlInput1" placeholder="">
-      			</div>
-      		</div>
-      		<button type="button" class="btn btn-outline-dark btn-lg modal-button">Обратиться</button>		
-      	</form>											        
-      </div>						      
-    </div>
-  </div>
-</div>
-<!-- Модальное окно Отношения -->
-<!-- Модальное окно Смысл жизни -->
-<div class="modal fade" id="meaning" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
-    <div class="modal-content">
-      <div class="modal-header">						        
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span class="cross" aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      	<form class="help-form">
-      		<h5 class="modal-help-title">Мне нужна помощь в поисках смысла жизни</h5>				
-      		<div class="form-group">
-      			<div class="wrapper">
-      				<label class="modal-label" for="#">Имя</label>					      			
-      				<input type="email" class="form-control form-control-lg modal-input" id="exampleFormControlInput1" placeholder="">
-      			</div>
-      		</div>
-      		<div class="form-group">
-      			<div class="wrapper">
-      				<label class="modal-label" for="#">Телефон*</label>					      			
-      				<input type="phone" class="form-control form-control-lg modal-input" id="exampleFormControlInput1" placeholder="">
-      			</div>
-      		</div>
-      		<button type="button" class="btn btn-outline-dark btn-lg modal-button">Обратиться</button>		
-      	</form>											        
-      </div>						      
-    </div>
-  </div>
-</div>
-<!-- Модальное окно Смысл жизни -->
-<!-- Модальное окно Семья -->
-<div class="modal fade" id="family" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
-    <div class="modal-content">
-      <div class="modal-header">						        
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span class="cross" aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      	<form class="help-form">
-      		<h5 class="modal-help-title">Мне нужна помощь в семье</h5>				
-      		<div class="form-group">
-      			<div class="wrapper">
-      				<label class="modal-label" for="#">Имя</label>					      			
-      				<input type="email" class="form-control form-control-lg modal-input" id="exampleFormControlInput1" placeholder="">
-      			</div>
-      		</div>
-      		<div class="form-group">
-      			<div class="wrapper">
-      				<label class="modal-label" for="#">Телефон*</label>					      			
-      				<input type="phone" class="form-control form-control-lg modal-input" id="exampleFormControlInput1" placeholder="">
-      			</div>
-      		</div>
-      		<button type="button" class="btn btn-outline-dark btn-lg modal-button">Обратиться</button>		
-      	</form>											        
-      </div>						      
-    </div>
-  </div>
-</div>
-<!-- Модальное окно Семья -->
-<!-- Модальное окно Бизнесс -->
-<div class="modal fade" id="business" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
-    <div class="modal-content">
-      <div class="modal-header">						        
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span class="cross" aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      	<form class="help-form">
-      		<h5 class="modal-help-title">Мне нужна помощь в бизнесе</h5>				
-      		<div class="form-group">
-      			<div class="wrapper">
-      				<label class="modal-label" for="#">Имя</label>					      			
-      				<input type="email" class="form-control form-control-lg modal-input" id="exampleFormControlInput1" placeholder="">
-      			</div>
-      		</div>
-      		<div class="form-group">
-      			<div class="wrapper">
-      				<label class="modal-label" for="#">Телефон*</label>					      			
-      				<input type="phone" class="form-control form-control-lg modal-input" id="exampleFormControlInput1" placeholder="">
-      			</div>
-      		</div>
-      		<button type="button" class="btn btn-outline-dark btn-lg modal-button">Обратиться</button>		
-      	</form>											        
-      </div>						      
-    </div>
-  </div>
-</div>
-<!-- Модальное окно Бизнесс -->
-<!-- Модальное окно Адвокат -->
-<div class="modal fade" id="loyar" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
-    <div class="modal-content">
-      <div class="modal-header">						        
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span class="cross" aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      	<form class="help-form">
-      		<h5 class="modal-help-title">Мне нужна помощь семейного адвоката</h5>				
-      		<div class="form-group">
-      			<div class="wrapper">
-      				<label class="modal-label" for="#">Имя</label>					      			
-      				<input type="email" class="form-control form-control-lg modal-input" id="exampleFormControlInput1" placeholder="">
-      			</div>
-      		</div>
-      		<div class="form-group">
-      			<div class="wrapper">
-      				<label class="modal-label" for="#">Телефон*</label>					      			
-      				<input type="phone" class="form-control form-control-lg modal-input" id="exampleFormControlInput1" placeholder="">
-      			</div>
-      		</div>
-      		<button type="button" class="btn btn-outline-dark btn-lg modal-button">Обратиться</button>		
-      	</form>											        
-      </div>						      
-    </div>
-  </div>
-</div>
-<!-- Модальное окно Адвокат -->
+<!-- Модальное окно -->
 
 <!-- Телефонная трубка -->
 <div class="call">
 	<a href="tel: +38(093)153 51 11"><span class="phone-call"><i class="fas fa-phone-alt"></i></span></a>
 </div>
 <!-- Телефонная трубка -->
-
-
-
 		
 
 	<!-- Font awesom icons -->
